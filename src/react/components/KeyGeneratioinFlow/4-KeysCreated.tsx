@@ -56,13 +56,13 @@ const KeysCreated: FC<KeysCreatedProps> = (props): ReactElement => {
             </Typography>
             <LoudText>Deposit data file(s) (ex. deposit_data-xxxxxx.json)</LoudText>
             <Typography variant="body2" align="left">
-              This file represents public information about your validator.  It will be required to execute your deposit through the Ethereum Launchpad.  It can be recreated from your secret recovery phrase if necessary.
+              This file represents public information about your validator.  It will be required to execute your deposit through the Gnosis Deposit UI.  It can be recreated from your secret recovery phrase if necessary.
             </Typography>
           </Box>
           <Box sx={{ m: 2 }}>
             <LoudText>Secret Recovery Phrase (24 words)</LoudText>
             <Typography variant="body2" align="left">
-              This was the first thing you created.  It is also known as a "mnemonic" or "seed phrase".  You'll need this to withdraw your funds.  Keep multiple copies in different physical locations safe from theft, fire, water and other hazards. Keep it private.  There is no way to recover this.
+              This was the first thing you created.  It is also known as a "mnemonic" or "seed phrase".  You'll need this to withdraw your funds.  Keep multiple copies in different physical locations safe from theft, fire, water and other hazards. Keep it private.  There is no way to recover this if lost.
             </Typography>
             <QuietText>
               Note: Your clipboard will be cleared upon closing this application.

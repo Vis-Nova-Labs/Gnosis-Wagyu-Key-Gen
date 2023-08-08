@@ -249,7 +249,7 @@ const BTECConfigurationWizard: FC<Props> = (props): ReactElement => {
     <Grid container direction="column" spacing={2}>
       <Grid item>
         <Typography variant="h1">
-        Generate BLS to execution change
+        Generate BLS To Execution Change (BTEC) message
         </Typography>
       </Grid>
       <ContentGrid item container>

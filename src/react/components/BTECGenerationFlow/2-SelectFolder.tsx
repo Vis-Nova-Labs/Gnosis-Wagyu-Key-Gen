@@ -45,7 +45,7 @@ const SelectFolder: FC<SelectFolderProps> = (props): ReactElement => {
     <Grid item container direction="column" spacing={3}>
       <Grid item xs={12}>
         <Typography variant="body1">
-          Choose a folder where we should save your BLS to execution change file.
+          Choose a folder where we should save your BLS To Execution Change (BTEC) message file.
         </Typography>
       </Grid>
       <Grid item xs={12}>

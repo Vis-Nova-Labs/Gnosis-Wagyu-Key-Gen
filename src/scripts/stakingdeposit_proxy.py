@@ -69,7 +69,7 @@ def generate_bls_to_execution_change(
     
     eth1_withdrawal_address = execution_address
     if not is_hex_address(eth1_withdrawal_address):
-        raise ValueError("The given Eth1 address is not in hexadecimal encoded form.")
+        raise ValueError("The given Gnosis Chain/Ethereum address is not in hexadecimal encoded form.")
 
     eth1_withdrawal_address = to_normalized_address(eth1_withdrawal_address)
     execution_address = eth1_withdrawal_address
@@ -218,7 +218,7 @@ def generate_keys(args):
     if args.eth1_withdrawal_address:
         eth1_withdrawal_address = args.eth1_withdrawal_address
         if not is_hex_address(eth1_withdrawal_address):
-            raise ValueError("The given Eth1 address is not in hexadecimal encoded form.")
+            raise ValueError("The given Gnosis Chain/Ethereum address is not in hexadecimal encoded form.")
 
         eth1_withdrawal_address = to_normalized_address(eth1_withdrawal_address)
 
@@ -349,7 +349,7 @@ def main():
     generate_parser.add_argument("chain", help="For which network to create the change", type=str)
     generate_parser.add_argument("mnemonic", help="Mnemonic", type=str)
     generate_parser.add_argument("index", help="Validator start index", type=int)
-    generate_parser.add_argument("indices", help="Validator index number(s) as identified on the beacon chain (comma seperated)", type=str)
+    generate_parser.add_argument("indices", help="Validator index number(s) as identified on the Gnosis Beacon Chain (comma seperated)", type=str)
     generate_parser.add_argument("withdrawal_credentials", help="Old BLS withdrawal credentials of the given validator(s) (comma seperated)", type=str)
     generate_parser.add_argument("execution_address", help="withdrawal address", type=str)
     generate_parser.set_defaults(func=parse_bls_change)

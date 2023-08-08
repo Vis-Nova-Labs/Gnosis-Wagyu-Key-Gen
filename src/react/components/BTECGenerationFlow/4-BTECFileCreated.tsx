@@ -43,7 +43,7 @@ const BTECFileCreated: FC<BTECFileCreatedProps> = (props): ReactElement => {
       <Grid item xs={10}>
           <Box sx={{ m: 2 }}>
             <Typography variant="body1" align="left">
-              Your BLS to execution change file has been created here: <Link display="inline" component="button" onClick={openKeyLocation}>{props.folderPath}</Link>
+              Your BLS To Execution Change (BTEC) message file has been created here: <Link display="inline" component="button" onClick={openKeyLocation}>{props.folderPath}</Link>
             </Typography>
           </Box>
       </Grid>
@@ -54,9 +54,9 @@ const BTECFileCreated: FC<BTECFileCreatedProps> = (props): ReactElement => {
           <Typography variant="body1" align="left">
             There is a single file for this:
           </Typography>
-          <LoudText>BLS to execution file (ex. bls_to_execution_change-xxxxxxx.json)</LoudText>
+          <LoudText>BLS To Execution Change (BTEC) message file (ex. bls_to_execution_change-xxxxxxx.json)</LoudText>
           <Typography variant="body2" align="left">
-            This file contains your signature to add your withdrawal address on your validator(s). You can easily publish it on beaconcha.in website by using their <em>Broadcast Signed Messages</em> tool.
+            This file contains your signature to add your withdrawal address on your validator(s). You can easily publish it on the gnosischa.in website by using their <em>Broadcast Signed Messages</em> tool, found here https://gnosischa.in/tools/broadcast.
           </Typography>
           <QuietText>
             Note: Your clipboard will be cleared upon closing this application.

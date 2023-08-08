@@ -12,3 +12,4 @@ dist/
 build/
 src/scripts/__pycache__/
 stakingdeposit_proxy.spec
+.DS_Store
