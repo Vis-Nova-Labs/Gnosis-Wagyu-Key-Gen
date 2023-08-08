@@ -174,15 +174,17 @@ const Home: FC<HomeProps> = (props): ReactElement => {
         </div>
       </Modal>
 
-      <LandingHeader variant="h1">Welcome!</LandingHeader>
+      <LandingHeader variant="h1">Welcome to the Gnosis Wagyu Key Generator!</LandingHeader>
       <KeyIcon />
-      <SubHeader>Your key generator for staking on Ethereum.<br/>You should run this tool&nbsp;
+      <SubHeader>Your key generator for staking on The Gnosis Beacon Chain.<br/>You should run this tool&nbsp;
       <Tooltip title={tooltips.OFFLINE}><Dotted>offline</Dotted></Tooltip> for your own security.</SubHeader>
 
       <Links>
-        <InfoLabel>Github:</InfoLabel> https://github.com/stake-house/wagyu-key-gen
+        <InfoLabel>Github:</InfoLabel> https://github.com/vis-nova-labs/gnosis-wagyu-key-gen
         <br />
-        <InfoLabel>Support:</InfoLabel> https://discord.io/ethstaker
+        <InfoLabel>Support:</InfoLabel> https://discord.gg/dappnode
+        <br />
+        <InfoLabel>Powered by Stake-House:</InfoLabel> https://github.com/stake-house/wagyu-key-gen
       </Links>
 
       <OptionsGrid container spacing={2} direction="column">

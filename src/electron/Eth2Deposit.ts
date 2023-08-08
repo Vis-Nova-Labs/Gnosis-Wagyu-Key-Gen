@@ -260,7 +260,7 @@ const validateMnemonic = async (
  * Validate BLS credentials by calling the validate_bls_credentials function
  * from the stakingdeposit_proxy application.
  * 
- * @param chain The network setting for the signing domain. Possible values are `mainnet`,
+ * @param chain The network setting for the signing domain. Possible values are `gnosis` and `chiado` Commented out: `mainnet`,
  *              `goerli`, `zhejiang`.
  * @param mnemonic The mnemonic from which the BLS credentials are derived.
  * @param index The index of the first validator's keys.

@@ -138,7 +138,7 @@ const MainInputs = (props: GenerateKeysProps) => {
           />
         </Tooltip>
         <WithdrawalNotice variant="body1">
-          Please ensure that you have control over this address.
+          Please ensure that you have full control over this address.
         </WithdrawalNotice>
       </Grid>
     </Grid>

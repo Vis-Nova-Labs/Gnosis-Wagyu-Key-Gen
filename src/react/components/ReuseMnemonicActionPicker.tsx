@@ -76,7 +76,7 @@ export const ReuseMnemonicActionPicker = (props: ReuseMnemonicActionPickerProps)
           <Grid item>
             <Tooltip title="If you initially created your validator keys without adding a withdrawal address, you can generate this BLS to execution change to add one once.">
               <Button variant="contained" color="primary" onClick={handleSelectGenerateBLSToExecutionChange}>
-                Generate your BLS to execution change<br />(Add a withdrawal address)
+                Generate your BLS To Execution Change (BTEC) message <br />(Add a withdrawal address)
               </Button>
             </Tooltip>
           </Grid>

@@ -123,7 +123,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
               <Tooltip title={tooltips.ETH1_WITHDRAW_ADDRESS}>
                 <AddressTextField
                   id="eth1-withdraw-address"
-                  label="Ethereum Withdrawal Address (Optional)"
+                  label="Gnosis Chain Withdrawal Address (Highly Recommended, but technically optional)"
                   variant="outlined"
                   value={props.withdrawalAddress}
                   onChange={updateEth1WithdrawAddress}
@@ -132,7 +132,7 @@ const KeyInputs = (props: GenerateKeysProps) => {
                 />
               </Tooltip>
               <WithdrawalNotice variant="body1">
-                Please ensure that you have control over this address. If you do not add a withdrawal address now, you will be able to add one later with your 24 words secret recovery phrase.
+                Please ensure that you have full control over this address. If you do not add a withdrawal address now, you will be able to add one later with your 24 words secret recovery phrase.
               </WithdrawalNotice>
             </Grid>
           </Grid>

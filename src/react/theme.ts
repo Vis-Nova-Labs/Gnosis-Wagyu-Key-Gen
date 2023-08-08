@@ -1,17 +1,18 @@
 import { createTheme } from "@material-ui/core";
-import { amber, blue } from "@material-ui/core/colors";
-
+import { green, blue } from "@material-ui/core/colors";
+import { GnosisGreen } from "./colors";
 
 
 const theme = createTheme({
   palette: {
     type: "dark",
-    primary: amber,
+    primary: green,
     secondary: blue,
   },
   typography: {
     h1: {
-      fontSize: "36px"
+      fontSize: "36px",
+      justifyContent: "Center"
     }
   }
 });

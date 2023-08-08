@@ -35,7 +35,7 @@ const CreatingBTECFile: FC<CreatingBTECFileProps> = (): ReactElement => {
       <Grid container item spacing={3} xs={10}>
         <Grid item xs={12}>
           <WaitingMessage variant="body1">
-            Creating your BLS to execution change file.
+            Creating your BLS To Execution Change (BTEC) message file.
           </WaitingMessage>
         </Grid>
         <Grid item container xs={12} justifyContent="center">
