@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/vendors/staking-deposit-cli-2.5.0",
+        "./src/vendors/staking-deposit-cli-2.5.0/staking_deposit/utils"
+    ]
+}

@@ -1,13 +1,12 @@
 {
-  "name": "gnosis_wagyukeygen",
+  "name": "wagyukeygen",
   "productName": "Gnosis Wagyu Key Gen",
-  "upstreamVersion": "1.7.0",
-  "version": "0.1.2",
-  "description": "GUI key generation tool wrapping the staking deposit cli.",
+  "version": "1.0.0",
+  "description": "GUI key generation tool wrapping the deposit cli.",
   "main": "./build/electron/index.js",
   "author": "Colfax Selby <colfax.selby@gmail.com>",
   "contributors": [
-    "Voss <voss@visnovalabs.io> (https://github.com/alexpeterson91)"
+    "Voss <voss@visnovalabs.io> (https://github.com/Vis-Nova-Labs) (https://github.com/alexpeterson91)"
   ],
   "license": "GPL-3.0",
   "devDependencies": {
