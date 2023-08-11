@@ -61,6 +61,10 @@
       "static/icon.png"
     ],
     "mac": {
+      "hardenedRuntime" : true,
+      "gatekeeperAssess": false,
+      "entitlements": "src/electron/entitlements.mac.plist",
+      "entitlementsInherit": "src/electron/entitlements.mac.plist",
       "category": "public.app-category.utilities"
     },
     "linux": {
