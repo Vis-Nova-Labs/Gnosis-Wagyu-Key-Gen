@@ -12,4 +12,8 @@ dist/
 build/
 src/scripts/__pycache__/
 stakingdeposit_proxy.spec
+
+# For security in MacOS development
+.env
+*.provisionprofile
 .DS_Store

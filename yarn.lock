@@ -201,6 +201,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@electron/notarize@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@electron/notarize@npm:2.1.0"
+  dependencies:
+    debug: ^4.1.1
+    fs-extra: ^9.0.1
+    promise-retry: ^2.0.1
+  checksum: ac58f39f4b2370ea929837cef50ebeedb4108ed9bd2a3fef0b89254891014a745da2db703b18b8e0d097a17000cc8fa984bcff3f087368986cb4a59753365a2f
+  languageName: node
+  linkType: hard
+
+"@electron/osx-sign@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "@electron/osx-sign@npm:1.0.4"
+  dependencies:
+    compare-version: ^0.1.2
+    debug: ^4.3.4
+    fs-extra: ^10.0.0
+    isbinaryfile: ^4.0.8
+    minimist: ^1.2.6
+    plist: ^3.0.5
+  bin:
+    electron-osx-flat: bin/electron-osx-flat.js
+    electron-osx-sign: bin/electron-osx-sign.js
+  checksum: 0d7382922eabd06ee53b538e15050c7662773ba3fd07cc51ee86f5ec63872685c3b6c8678c967afe7efbee1b393d555fb5553137f7a76af514b30d102568d63e
+  languageName: node
+  linkType: hard
+
 "@electron/universal@npm:1.0.5":
   version: 1.0.5
   resolution: "@electron/universal@npm:1.0.5"
@@ -918,6 +946,13 @@ __metadata:
     webpack-dev-server:
       optional: true
   checksum: 050a930b63653ae0002e135cc9b0810483dd0857acd8e7ae2f41011f48f8856a150dd60c787105597ef8814541031779be1dc015ef637d70a7524d373cbbf346
+  languageName: node
+  linkType: hard
+
+"@xmldom/xmldom@npm:^0.8.8":
+  version: 0.8.10
+  resolution: "@xmldom/xmldom@npm:0.8.10"
+  checksum: 4c136aec31fb3b49aaa53b6fcbfe524d02a1dc0d8e17ee35bd3bf35e9ce1344560481cd1efd086ad1a4821541482528672306d5e37cdbd187f33d7fadd3e2cf0
   languageName: node
   linkType: hard
 
@@ -2011,6 +2046,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debug@npm:^4.3.4":
+  version: 4.3.4
+  resolution: "debug@npm:4.3.4"
+  dependencies:
+    ms: 2.1.2
+  peerDependenciesMeta:
+    supports-color:
+      optional: true
+  checksum: 3dbad3f94ea64f34431a9cbf0bafb61853eda57bff2880036153438f50fb5a84f27683ba0d8e5426bf41a8c6ff03879488120cf5b3a761e77953169c0600a708
+  languageName: node
+  linkType: hard
+
 "decompress-response@npm:^3.3.0":
   version: 3.3.0
   resolution: "decompress-response@npm:3.3.0"
@@ -2205,6 +2252,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^16.3.1":
+  version: 16.3.1
+  resolution: "dotenv@npm:16.3.1"
+  checksum: 15d75e7279018f4bafd0ee9706593dd14455ddb71b3bcba9c52574460b7ccaf67d5cf8b2c08a5af1a9da6db36c956a04a1192b101ee102a3e0cf8817bbcf3dfd
+  languageName: node
+  linkType: hard
+
 "dotenv@npm:^9.0.2":
   version: 9.0.2
   resolution: "dotenv@npm:9.0.2"
@@ -2250,6 +2304,16 @@ __metadata:
     electron-builder: cli.js
     install-app-deps: install-app-deps.js
   checksum: b33929c9676c34192012cd056cfb06950ee785adeb2c2f8f749e241bae9534c1c7461a4e8b594c764dbdc7cc381568d9812d936a2475684745e8cbb1300c4713
+  languageName: node
+  linkType: hard
+
+"electron-notarize@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "electron-notarize@npm:1.2.2"
+  dependencies:
+    debug: ^4.1.1
+    fs-extra: ^9.0.1
+  checksum: 98909bc90f0840a4bd3da0edc6895d719eb0d17942812a8c8f5a130d323c7fbaafd819245cfe9a6c5b5abfa8dd3b0eb2bd8ee9c0b2dcf0c3b238b6845730c368
   languageName: node
   linkType: hard
 
@@ -2852,6 +2916,44 @@ __metadata:
   checksum: 5a5f3c7ab94708260a98106b35946b74bb57f6b2013e39668dc9e8770b80a3418103b63a2b4aa01c31af15fdf6a2940398ffc0a408573c34c2304f928895adff
   languageName: node
   linkType: hard
+
+"gnosis-wagyukeygen@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "gnosis-wagyukeygen@workspace:."
+  dependencies:
+    "@electron/notarize": ^2.1.0
+    "@electron/osx-sign": ^1.0.4
+    "@material-ui/core": ^4.12.3
+    "@material-ui/icons": ^4.11.2
+    "@material-ui/lab": ^4.0.0-alpha.60
+    "@types/react": ^17.0.14
+    "@types/react-dom": ^17.0.9
+    "@types/react-router-dom": ^5.1.8
+    "@types/styled-components": ^5.1.11
+    "@types/tmp": ^0.2.2
+    css-loader: ^5.2.6
+    dotenv: ^16.3.1
+    electron: 18.3.15
+    electron-builder: ^22.14.5
+    electron-notarize: ^1.2.2
+    file-loader: ^6.2.0
+    git-revision-webpack-plugin: ^5.0.0
+    html-webpack-plugin: ^5.5.0
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    react-is: ^18.0.2
+    react-router-dom: ^5.2.0
+    shebang-loader: ^0.0.1
+    style-loader: ^3.0.0
+    styled-components: ^5.3.0
+    ts-loader: ^9.2.3
+    typeface-roboto: ^1.1.13
+    typescript: ^4.9.5
+    web3-utils: ^1.7.0
+    webpack: ^5.64.3
+    webpack-cli: ^4.9.1
+  languageName: unknown
+  linkType: soft
 
 "got@npm:^9.6.0":
   version: 9.6.0
@@ -3871,6 +3973,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.6":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^1.0.2":
   version: 1.0.2
   resolution: "minipass-collect@npm:1.0.2"
@@ -4341,6 +4450,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"plist@npm:^3.0.5":
+  version: 3.1.0
+  resolution: "plist@npm:3.1.0"
+  dependencies:
+    "@xmldom/xmldom": ^0.8.8
+    base64-js: ^1.5.1
+    xmlbuilder: ^15.1.1
+  checksum: c8ea013da8646d4c50dff82f9be39488054621cc229957621bb00add42b5d4ce3657cf58d4b10c50f7dea1a81118f825838f838baeb4e6f17fab453ecf91d424
+  languageName: node
+  linkType: hard
+
 "popper.js@npm:1.16.1-lts":
   version: 1.16.1-lts
   resolution: "popper.js@npm:1.16.1-lts"
@@ -4559,6 +4679,13 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-is@npm:^18.0.2":
+  version: 18.2.0
+  resolution: "react-is@npm:18.2.0"
+  checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
   languageName: node
   linkType: hard
 
@@ -5478,23 +5605,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.3.5":
-  version: 4.5.2
-  resolution: "typescript@npm:4.5.2"
+"typescript@npm:^4.9.5":
+  version: 4.9.5
+  resolution: "typescript@npm:4.9.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 74f9ce65d532bdf5d0214b3f60cf37992180023388c87a11ee6f838a803067ef0b63c600fa501b0deb07f989257dce1e244c9635ed79feca40bbccf6e0aa1ebc
+  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.3.5#~builtin<compat/typescript>":
-  version: 4.5.2
-  resolution: "typescript@patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=ddd1e8"
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
+  version: 4.9.5
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ddd1e8"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 24a439e062a05e3285a4f0e8a40644116ecdca89f3e908bed01e5a01b9aee747e3bcf0e85fe9e017e5ebf0c0863437c39479f2616f55a244c2d82d37022cdc4f
+  checksum: 2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
   languageName: node
   linkType: hard
 
@@ -5624,39 +5751,6 @@ __metadata:
   checksum: 690a8d6ad5a4001672290e9719e3107c86269bc45fe19f844758eecf502e59f8aa9631b19b839f6d3dea562334884d22d1eb95ae7c863032075a9212c889e116
   languageName: node
   linkType: hard
-
-"wagyukeygen@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "wagyukeygen@workspace:."
-  dependencies:
-    "@material-ui/core": ^4.12.3
-    "@material-ui/icons": ^4.11.2
-    "@material-ui/lab": ^4.0.0-alpha.60
-    "@types/react": ^17.0.14
-    "@types/react-dom": ^17.0.9
-    "@types/react-router-dom": ^5.1.8
-    "@types/styled-components": ^5.1.11
-    "@types/tmp": ^0.2.2
-    css-loader: ^5.2.6
-    electron: 18.3.15
-    electron-builder: ^22.14.5
-    file-loader: ^6.2.0
-    git-revision-webpack-plugin: ^5.0.0
-    html-webpack-plugin: ^5.5.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-router-dom: ^5.2.0
-    shebang-loader: ^0.0.1
-    style-loader: ^3.0.0
-    styled-components: ^5.3.0
-    ts-loader: ^9.2.3
-    typeface-roboto: ^1.1.13
-    typescript: ^4.3.5
-    web3-utils: ^1.7.0
-    webpack: ^5.64.3
-    webpack-cli: ^4.9.1
-  languageName: unknown
-  linkType: soft
 
 "watchpack@npm:^2.3.0":
   version: 2.3.0
@@ -5843,7 +5937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xmlbuilder@npm:>=11.0.1":
+"xmlbuilder@npm:>=11.0.1, xmlbuilder@npm:^15.1.1":
   version: 15.1.1
   resolution: "xmlbuilder@npm:15.1.1"
   checksum: 14f7302402e28d1f32823583d121594a9dca36408d40320b33f598bd589ca5163a352d076489c9c64d2dc1da19a790926a07bf4191275330d4de2b0d85bb1843
